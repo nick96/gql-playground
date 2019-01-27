@@ -3,7 +3,6 @@ package common
 import (
 	"database/sql"
 	"log"
-	"fmt"
 
 	// Import the sqlite3 library so we abstract away from it
 	_ "github.com/mattn/go-sqlite3"
@@ -27,6 +26,7 @@ type TodoList struct {
 var db *sql.DB
 
 func init() {
+	log.Printf("initialising common library")
 	db, err := sql.Open("sqlite3", "todo.db")
 	if err != nil {
 		log.Fatalf("could not open database, error: %v", err)
@@ -79,19 +79,16 @@ func (list *TodoList) AddItem(item TodoItem) error {
 
 // AddList ...
 func AddList(list TodoList) error {
-	fmt.Printf("ok")
 	tx, err := db.Begin()
 	if err != nil {
 		return err
 	}
 	defer tx.Commit()
-	fmt.Printf("ok")
 	var stmt *sql.Stmt
 	stmt, err = tx.Prepare(`INSERT INTO todoLists(name) VALUES (?);`)
 	if err != nil {
 		return err
 	}
-	fmt.Printf("ok")
 	defer stmt.Close()
 	_, err = stmt.Exec(list.Name)
 	return err
