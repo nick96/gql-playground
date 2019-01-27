@@ -1,2 +1,4 @@
 golang/**/vendor/
 .vscode/
+/golang/graphql-go/todo.db
+/golang/graphql-go/graphql-go
