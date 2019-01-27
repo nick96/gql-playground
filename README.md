@@ -1,0 +1,1 @@
+Playground for testing out various GraphQL libraries in different languages.
