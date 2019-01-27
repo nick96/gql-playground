@@ -2,3 +2,5 @@ github.com/graphql-go/graphql v0.7.7 h1:nwEsJGwPq9N6cElOO+NYyoWuELAQZ4GuJks0Rlco
 github.com/graphql-go/graphql v0.7.7/go.mod h1:k6yrAYQaSP59DC5UVxbgxESlmVyojThKdORUqGDGmrI=
 github.com/mattn/go-sqlite3 v1.10.0 h1:jbhqpg7tQe4SupckyijYiy0mJJ/pRyHvXf7JdWK860o=
 github.com/mattn/go-sqlite3 v1.10.0/go.mod h1:FPy6KqzDD04eiIsT53CuJW3U88zkxoIYsOqkbpncsNc=
+github.com/nick96/gql-playground/golang/common v0.0.0-20190127144124-d98785d429f2 h1:0h5nC7w+iZk+/f1anXMy7Ph5Du4+f0sBZ1wFoETMLgA=
+github.com/nick96/gql-playground/golang/common v0.0.0-20190127144124-d98785d429f2/go.mod h1:arW5mZEmrCIiuPH8+v407FSWdK+UzkD8cKjgjV68doU=

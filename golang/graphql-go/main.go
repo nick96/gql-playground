@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
-	"../common"
 	"errors"
 	"github.com/graphql-go/graphql"
+	"github.com/nick96/gql-playground/golang/common"
 )
 
 // TodoItemType ...
