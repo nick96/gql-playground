@@ -1,0 +1,6 @@
+{
+    "Enable": [
+        "golint",
+        "errcheck"
+    ]
+}
